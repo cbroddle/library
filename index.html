@@ -1,14 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library App</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="calculator.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="library.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <!-- Book Icon Code -->
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
+                </svg>
+            </div>
+            <div class="nav-heading">Books I've Read...</div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-menu">
+                <div class="menu-icon">
+                    <!-- Menu Icon Code -->
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                    </svg>
+                </div>
+                <!--
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="https://materialdesignicons.com/">Save</a></li>
+                    <li><a href="https://materialdesignicons.com/">Download</a></li>
+                    <li><a href="https://materialdesignicons.com/">Clear List</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+    </div>
+    <div class="library-body">
+        <div class="top-container">
+            <div class="add-icon">
+                <!-- Add Icon Code -->
+                <svg style="width:36px;height:36px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                </svg>
+            </div>
+            <div class="add-button">
+                <button class="add-button">New Book</button>
+            </div>
+        </div>
+        <div class="add-form">
+            <div class="add-form-header">New Book</div>
+            <form class="add-new">
+                <input type="text" id="booktitle" name="booktitle" value="Title">
+                <input type="text" id="bookauthor" name="bookauthor" value="Author">
+                <input type="text" id="bookpages" name="bookpages" value="Number of Pages">
+            </form>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-top">
+                    <div class="title">Title</div>
+                    <div class="author">Author</div>
+                    <div class="pages">300</div>
+                </div>
+                <div class="card-bottom">
+                    <div class="read-container">
+                        <input type="checkbox" id="read" class="read">
+                        <label for="read">Read</label>
+                    </div>
+                    <div class="trash-icon">
+                        <!-- Trash Icon Code -->
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <div class="title">Title</div>
+                    <div class="author">Author</div>
+                    <div class="pages">300</div>
+                </div>
+                <div class="card-bottom">
+                    <div class="read-container">
+                        <input type="checkbox" id="read" class="read">
+                        <label for="read">Read</label>
+                    </div>
+                    <div class="trash-icon">
+                        <!-- Trash Icon Code -->
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <div class="title">Title</div>
+                    <div class="author">Author</div>
+                    <div class="pages">300</div>
+                </div>
+                <div class="card-bottom">
+                    <div class="read-container">
+                        <input type="checkbox" id="read" class="read">
+                        <label for="read">Read</label>
+                    </div>
+                    <div class="trash-icon">
+                        <!-- Trash Icon Code -->
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

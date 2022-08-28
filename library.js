@@ -1,3 +1,5 @@
+let myLibrary = [];
+
 // Constructor function
 function Book(title, author, pages, read) {
     this.title = title;
