@@ -6,18 +6,31 @@ const menuSidebar = document.querySelector(".menu-container");
 // add new book button
 const newBookBtn = document.querySelector(".add-button");
 
+// display "add new" form with modal overlay
 const newBookForm = document.querySelector(".add-form");
+const modalOverlay = document.querySelector(".modal-overlay");
 
+// cancel "add new book" link
+const cancelLink = document.querySelector(".cancel-link");
 
 // menu event listener
 menuToggle.addEventListener("click", function () {
     menuSidebar.classList.toggle("show-menu-container");
 });
 
-// display "new book" form
+
 newBookBtn.addEventListener("click", function () {
+    // display "new book" form
     newBookForm.classList.toggle("show-add-form");
+    // display modal overlay
+    modalOverlay.classList.toggle("show-modal-overlay");
 });
+
+// cancel add new book form
+cancelLink.addEventListener("click", function () {
+    newBookForm.classList.remove("show-add-form");
+    modalOverlay.classList.remove("show-modal-overlay");
+})
 
 /*
 let myLibrary = [];

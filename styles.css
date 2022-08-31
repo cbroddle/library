@@ -83,24 +83,54 @@ button.add-button {
 }
 
 /* Hide New Book Form Default */
+.modal-overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: #c4c4c4b7;
+}
+
 .add-form {
-    height: 0;
-    overflow: hidden;
-    transition: 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: none;
+    visibility: hidden;
+    z-index: -10;
     background-color: rgb(82, 82, 82);
     border-radius: 0 20px 0 0;
 }
 
 /* Display New Book Form */
+.show-modal-overlay {
+    visibility: visible;
+    z-index: 5;
+}
+
 .show-add-form {
-    height: auto;
-    width: 75vw;
+    top: 30%;
+    left: 30%;
+    height: 20vh;
+    width: 35vw;
+    min-width: 250px;
+    display: grid;
+    place-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 0 20px 0 0;
+    visibility: visible;
+    z-index: 10;
 }
 
 .add-form-header {
     color: white;
+    font-size: 1.5em;
 }
 
 form.add-new {
@@ -108,6 +138,7 @@ form.add-new {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 10px;
 }
 
 input {
@@ -118,7 +149,18 @@ input {
     background-color: rgb(82, 82, 82);
     color: white;
     margin: 5px;
-    padding: 5px;
+    padding: 5px 20px;
+}
+
+.form-nav-links {
+    width: 80%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-nav-links:hover {
+    text-decoration: underline;
 }
 
 .cards-container {
