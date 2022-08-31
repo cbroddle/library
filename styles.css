@@ -4,8 +4,6 @@
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-
-
 .navbar {
     background-color: rgb(82, 82, 82);
     color: white;
@@ -116,7 +114,7 @@ button.add-button {
 .show-add-form {
     top: 30%;
     left: 30%;
-    height: 20vh;
+    height: 30vh;
     width: 35vw;
     min-width: 250px;
     display: grid;
