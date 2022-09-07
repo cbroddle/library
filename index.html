@@ -59,9 +59,10 @@
                 <button class="add-button">+ New Book</button>
             </div>
         </div>
-        <div class="add-form">
+        <!-- Hidden form pg 1 -->
+        <div class="add-form" id="form-one">
             <div class="add-form-header">New Book</div>
-            <form class="add-new">
+            <form class="add-new" id="form-one">
                 <input type="text" id="booktitle" name="booktitle" value="Title">
                 <input type="text" id="bookauthor" name="bookauthor" value="Author">
                 <input type="text" id="bookpages" name="bookpages" value="Number of Pages">
@@ -69,6 +70,20 @@
         <div class="form-nav-links">
             <a class="cancel-link" id="cancel-link">Cancel</a>
             <a class="next-link" id="next-link">Next</a>
+        </div>
+        </div>
+        <!-- Hidden form pg 2 -->
+        <div class="add-form-two" id="form-two">
+            <div class="add-form-header">Finished Reading?</div>
+            <form class="add-new" id="form-two">
+                <div class="form-buttons">
+                    <button class="form-yes">Yes</button>
+                    <button class="form-no">No</button>
+                </div>
+            </form>
+        <div class="form-nav-links">
+            <a class="prev-link" id="prev-link">Go Back</a>
+            <a class="submit-link" id="submit-link">Submit</a>
         </div>
         </div>
         <div class="cards-container">

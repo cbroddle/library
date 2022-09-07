@@ -105,6 +105,19 @@ button.add-button {
     border-radius: 0 20px 0 0;
 }
 
+.add-form-two {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: none;
+    visibility: hidden;
+    z-index: -10;
+    background-color: rgb(82, 82, 82);
+    border-radius: 0 20px 0 0;
+}
+
 /* Display New Book Form */
 .show-modal-overlay {
     visibility: visible;
@@ -112,6 +125,21 @@ button.add-button {
 }
 
 .show-add-form {
+    top: 30%;
+    left: 30%;
+    height: 30vh;
+    width: 35vw;
+    min-width: 250px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 20px 0 0;
+    visibility: visible;
+    z-index: 10;
+}
+
+.show-add-form-two {
     top: 30%;
     left: 30%;
     height: 30vh;
@@ -137,6 +165,34 @@ form.add-new {
     align-items: center;
     flex-direction: column;
     padding-top: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.form-buttons > button {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    padding: 14px 24px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.form-buttons > button:hover {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(82, 82, 82);
+    background-color: white;
+    padding: 14px 24px;
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 10px;
 }
 
 input {
