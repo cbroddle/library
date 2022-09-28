@@ -174,7 +174,8 @@ form.add-new {
     justify-content: center;
     gap: 40px;
 }
-
+/*
+switched to radio buttons
 .form-buttons > button {
     font-weight: bold;
     font-size: 16px;
@@ -194,7 +195,7 @@ form.add-new {
     border: 2px solid rgb(82, 82, 82);
     border-radius: 10px;
 }
-
+*/
 input {
     border-radius: 5px;
     border-color: white;
@@ -204,6 +205,11 @@ input {
     color: white;
     margin: 5px;
     padding: 5px 20px;
+}
+
+/* label for radio buttons */
+label {
+    color: white;
 }
 
 .form-nav-links {
