@@ -67,34 +67,35 @@
                 <input type="text" id="bookauthor" name="bookauthor" value="Author">
                 <input type="text" id="bookpages" name="bookpages" value="Number of Pages">
             </form>
-        <div class="form-nav-links">
-            <a class="cancel-link" id="cancel-link">Cancel</a>
-            <a class="next-link" id="next-link">Next</a>
-        </div>
+            <div class="form-nav-links">
+                <a class="cancel-link" id="cancel-link">Cancel</a>
+                <a class="next-link" id="next-link">Next</a>
+            </div>
         </div>
         <!-- Hidden form pg 2 -->
         <div class="add-form-two" id="form-two">
             <div class="add-form-header">Finished Reading?</div>
             <form class="add-new" id="form-two">
-                <div class="form-buttons" >
+                <div class="form-buttons">
                     <input type="radio" id="form-yes" name="book-read" value="Yes">
                     <label for="form-yes" class="form-yes">Yes</label>
                     <input type="radio" id="form-no" name="book-read" value="No">
                     <label for="form-no" class="form-no">No</label>
                 </div>
             </form>
-        <div class="form-nav-links">
-            <a class="prev-link" id="prev-link">Go Back</a>
-            <a class="submit-link" id="submit-link">Submit</a>
-        </div>
+            <div class="form-nav-links">
+                <a class="prev-link" id="prev-link">Go Back</a>
+                <a class="submit-link" id="submit-link">Submit</a>
+            </div>
         </div>
         <div class="cards-container">
             <div class="card">
                 <div class="card-top">
-                    <div class="title">Title</div>
-                    <div class="author">Author</div>
-                    <div class="pages">300</div>
+                    <div class="title" id="title">Title</div>
+                    <div class="author" id="author">Author</div>
+                    <div class="pages" id="pages">300</div>
                 </div>
+
                 <div class="card-bottom">
                     <div class="read-container">
                         <input type="checkbox" id="read" class="read">
@@ -110,6 +111,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="modal-overlay"></div>
 </body>
